@@ -1,0 +1,44 @@
+{
+  "name": "unknown-ts",
+  "version": "0.0.1",
+  "description": "An alias of unknown that works with legacy typescript versions (before 3.1)",
+  "files": [
+    "lib",
+    "typesVersions"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "typesVersions": {
+    ">=3.1": {
+      "*": [
+        "typesVersions/3.1.x/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "tslint -p tsconfig.json src/**/*.ts",
+    "prettier": "prettier --no-semi --single-quote --print-width 120 --parser typescript --list-different \"{src,test}/**/*.ts\"",
+    "clean": "rimraf rm -rf lib/*",
+    "build": "npm run clean && npm run lint && npm run prettier && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcanti/unknown-ts.git"
+  },
+  "author": "Giulio Canti <giulio.canti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcanti/unknown-ts/issues"
+  },
+  "homepage": "https://github.com/gcanti/unknown-ts",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^1.13.4",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^3.1.3"
+  },
+  "tags": [],
+  "keywords": []
+}
