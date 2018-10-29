@@ -1,6 +1,6 @@
 {
   "name": "unknown-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An alias of unknown that works with legacy typescript versions (before 3.1)",
   "files": [
     "lib",
