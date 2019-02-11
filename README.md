@@ -7,3 +7,7 @@ declare global {
   type unknown = mixed
 }
 ```
+
+# Usage
+1. `npm i unknown-ts -D`
+2. At the entry point of your application, `import 'unknown-ts'`
